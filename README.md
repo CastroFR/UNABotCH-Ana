@@ -3,7 +3,7 @@
 
 Chatbot inteligente para la Universidad Dr. Andrés Bello (Regional Chalatenango), desarrollado para el procesamiento de lenguaje natural y Flask para la implementación web.
 
-![Demo del Chatbot](images/Demo1.png + Demo2.png)
+![Demo del Chatbot](images/Demo2.png)
 
 ## Características Principales
 - ✅ Modelo de IA entrenado con datos específicos de la universidad
