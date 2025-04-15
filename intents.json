@@ -1,0 +1,144 @@
+{
+  "intents": [
+    {
+      "tag": "saludo",
+      "patterns": [
+        "Buenos días",
+        "Buenas tardes",
+        "Hola",
+        "¿Cómo están?",
+        "Necesito ayuda"
+      ],
+      "responses": [
+        "Buen día, soy el chatbot de la Universidad <br>Dr. Andrés Bello Regional Chalatenango. <br>¿En qué puedo asistirle?",
+        "Hola, estimado estudiante. ¿Qué información necesita?"
+      ]
+    },
+    {
+      "tag": "despedida",
+      "patterns": ["Adiós", "Hasta luego", "Gracias", "Nos vemos"],
+      "responses": [
+        "¡Hasta luego! Para más consultas, visite nuestro <a href='https://www.unab.edu.sv/chalatenango/' target='_blank'>sitio web</a>",
+        "Fue un placer ayudarle. ¡Éxito en sus estudios!"
+      ]
+    },
+    {
+      "tag": "admision",
+      "patterns": [
+        "¿Cuáles son los requisitos de admisión?",
+        "¿Qué documentos necesito para inscribirme?",
+        "Requisitos para matricularme",
+        "¿Qué piden para ingresar?"
+      ],
+      "responses": [
+        "Los requisitos de admisión son: <br>1. Certificado original de bachillerato <br>2. Partida de nacimiento <br>3. Copia y original de prueba AVANZO o PAES <br>4. DUI <br>5. Si es menor de edad: Carnet de minoridad y presencia de un responsable legal <br>Más detalles en <a href='https://www.unab.edu.sv/chalatenango/' target='_blank'>nuestro portal</a>"
+      ]
+    },
+    {
+      "tag": "programas_academicos",
+      "patterns": [
+        "¿Qué carreras ofrecen?",
+        "Oferta académica",
+        "Lista de ingenierías",
+        "¿Tienen licenciaturas?"
+      ],
+      "responses": [
+        "Nuestras carreras incluyen: <br><strong>Facultad de Ingeniería:</strong> <br>- Ingeniería en Sistemas Computacionales <br>- Ingeniería Civil <br>- Ingeniería Industrial <br><strong>Facultad de Ciencias Jurídicas:</strong> <br>- Licenciatura en Derecho <br><strong>Facultad de Salud:</strong> <br>- Licenciatura en Enfermería <br>Consulte el <a href='https://www.unab.edu.sv/chalatenango/' target='_blank'>listado completo aquí</a>"
+      ]
+    },
+    {
+      "tag": "costos",
+      "patterns": [
+        "¿Cuánto cuesta la mensualidad?",
+        "Precio de matrícula",
+        "Costos de carreras",
+        "¿Hay cuotas?"
+      ],
+      "responses": [
+        "Los costos varían según la carrera. <br>Para información detallada: <a href='https://www.unab.edu.sv/chalatenango/' target='_blank'>visite nuestro portal</a> o contacte al departamento financiero"
+      ]
+    },
+    {
+      "tag": "contacto",
+      "patterns": [
+        "¿Dónde están ubicados?",
+        "Teléfono de la universidad",
+        "Correo electrónico",
+        "¿Cómo los contacto?"
+      ],
+      "responses": [
+        "<strong>Dirección:</strong> Chalatenango, El Salvador <br><strong>Teléfono:</strong> <a href='tel:+50312345678'>+503 1234-5678</a> <br><strong>Correo:</strong> <a href='mailto:contacto@unab.edu.sv'>contacto@unab.edu.sv</a> <br><strong>Sitio web:</strong> <a href='https://www.unab.edu.sv/chalatenango/' target='_blank'>www.unab.edu.sv</a>"
+      ]
+    },
+    {
+      "tag": "tramites",
+      "patterns": [
+        "¿Cómo retiro una asignatura?",
+        "Convalidación de materias",
+        "Certificación de notas",
+        "Trámite de titulación"
+      ],
+      "responses": [
+        "Para trámites administrativos: <br><a href='https://www.unab.edu.sv/chalatenango/' target='_blank'>Visite nuestro portal</a> <br>o diríjase a secretaría académica"
+      ]
+    },
+    {
+      "tag": "becas",
+      "patterns": [
+        "¿Ofrecen becas?",
+        "Ayuda financiera",
+        "¿Cómo aplicar a una beca?",
+        "Requisitos para becas"
+      ],
+      "responses": [
+        "Contamos con programas de becas: <br><a href='https://www.unab.edu.sv/chalatenango/' target='_blank'>Postúlese en nuestro portal</a> <br>o consulte en bienestar estudiantil"
+      ]
+    },
+    {
+      "tag": "horarios",
+      "patterns": [
+        "¿Cuándo empiezan las clases?",
+        "Calendario académico",
+        "Fechas de exámenes",
+        "Horario de atención"
+      ],
+      "responses": [
+        "Calendario académico disponible en: <br><a href='https://www.unab.edu.sv/chalatenango/' target='_blank'>www.unab.edu.sv/chalatenango</a> <br>Consulte a su coordinador para horarios específicos"
+      ]
+    },
+    {
+      "tag": "instalaciones",
+      "patterns": [
+        "¿Tienen laboratorios?",
+        "Horario de la biblioteca",
+        "¿Hay cafetería?",
+        "Instalaciones deportivas"
+      ],
+      "responses": [
+        "Contamos con: <br>- Laboratorios equipados <br>- Biblioteca (7 AM a 6 PM) <br>- Canchas deportivas <br>- Cafetería estudiantil"
+      ]
+    },
+    {
+      "tag": "parciales",
+      "patterns": [
+        "¿Cuándo son los exámenes parciales?",
+        "Fechas de evaluaciones",
+        "Recuperación de parciales"
+      ],
+      "responses": [
+        "Fechas de evaluaciones disponibles en: <br><a href='https://www.unab.edu.sv/chalatenango/' target='_blank'>portal de su facultad</a>"
+      ]
+    },
+    {
+      "tag": "soporte_tecnico",
+      "patterns": [
+        "No puedo acceder al aula virtual",
+        "Problemas con el correo institucional",
+        "Error en el portal"
+      ],
+      "responses": [
+        "Contacte al departamento de TI: <br><a href='mailto:soporte@unab.edu.sv'>soporte@unab.edu.sv</a> <br><a href='tel:+50387654321'>+503 8765-4321</a>"
+      ]
+    }
+  ]
+}
