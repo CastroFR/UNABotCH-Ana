@@ -16,7 +16,7 @@ from torch.utils.data import Dataset, DataLoader
 from nltk_utils import bag_of_words, tokenize, stem
 from model import NeuralNet
 
-with open('intents.json', 'r') as f:
+with open('intents.json', 'r', encoding='utf-8') as f:
     intents = json.load(f)
 
 all_words = []
@@ -61,11 +61,11 @@ X_train = np.array(X_train)
 y_train = np.array(y_train)
 
 # Hyper-parameters 
-num_epochs = 1000
+num_epochs = 1500
 batch_size = 8
-learning_rate = 0.001
+learning_rate = 0.0005
 input_size = len(X_train[0])
-hidden_size = 8
+hidden_size = 64
 output_size = len(tags)
 print(input_size, output_size)
 

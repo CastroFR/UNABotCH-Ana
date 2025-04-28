@@ -3,7 +3,10 @@ class Chatbox {
         this.args = {
             openButton: document.querySelector('.chatbox__button'),
             chatBox: document.querySelector('.chatbox__support'),
-            sendButton: document.querySelector('.send__button')
+            sendButton: document.querySelector('.send__button'),
+            closeTooltip: document.querySelector('.close-tooltip'),
+            tooltip: document.querySelector('.chatbox__tooltip'),
+            tooltipClosed: false
         }
 
         this.state = false;
@@ -11,7 +14,7 @@ class Chatbox {
     }
 
     display() {
-        const {openButton, chatBox, sendButton} = this.args;
+        const {openButton, chatBox, sendButton, closeTooltip, tooltip} = this.args;
 
         openButton.addEventListener('click', () => this.toggleState(chatBox))
 
@@ -23,12 +26,27 @@ class Chatbox {
                 this.onSendButton(chatBox)
             }
         })
+
+        // Cerrar tooltip
+        closeTooltip.addEventListener('click', () => {
+            tooltip.classList.add('hidden');
+            this.args.tooltipClosed = true;
+        });
+
+        // Mostrar tooltip al cargar
+        setTimeout(() => {
+            tooltip.classList.remove('hidden');
+        }, 1000);
     }
 
     toggleState(chatbox) {
         this.state = !this.state;
 
-        // show or hides the box
+        // Cerrar tooltip SOLO si no estaba cerrado manualmente
+        if(this.state && !this.args.tooltipClosed) {
+            this.args.tooltip.classList.add('hidden');
+        }
+
         if(this.state) {
             chatbox.classList.add('chatbox--active')
         } else {

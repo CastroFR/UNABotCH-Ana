@@ -5,6 +5,10 @@ Chatbot inteligente para la Universidad Dr. Andrés Bello (Regional Chalatenango
 
 ![Demo del Chatbot](images/Demo2.png)
 
+Cambios y mejoras en UNABot.
+
+![V.3.0 del chatbot](images/Demo3.png)
+
 ## Características Principales
 - ✅ Modelo de IA entrenado con datos específicos de la universidad
 - ✅ Interfaz web responsive con soporte para móviles
