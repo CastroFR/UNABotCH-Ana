@@ -146,21 +146,31 @@ body {
     max-width: 70%;
 }
 
+/* Recuadro de texto del bot */
 .messages__item--visitor,
 .messages__item--typing {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    background: #660;
-    color: #fff
+    background: #ced5db; /* Gris azulado claro */
+    color: #2d3748
 }
-
+/* color: #212936; */
+/* background: #FFCA1A; */
+/* background: #660; */
 .messages__item--operator {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    background: var(--secondary); /* Original orange */
-    color: var(--primary);
+    background: #004A8F; /* Azul institucional UNAB */
+    color: white;
+}
+
+/* Efectos hover (opcional) */
+.messages__item--operator:hover,
+.messages__item--visitor:hover {
+    transform: translateY(-2px);
+    transition: transform 0.2s ease;
 }
 
 /* FOOTER */
@@ -213,7 +223,7 @@ body {
     color: #1a5a9e;
   }
 
-
+/* #1a5a9e; */
 
   /* Estilos para fondo de pagina en blanco */
 
@@ -384,4 +394,86 @@ body {
     font-size: 0.8rem;
     margin-top: 3px;
     opacity: 0.9;
+}
+
+/* Estilos para preguntas frecuentes */
+
+/* Contenedor principal */
+.quick-questions-wrapper {
+    position: fixed;
+    bottom: 90px; /* Ajusta según altura del input */
+    left: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    transition: all 0.3s ease;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Encabezado con botón de cerrar */
+.quick-questions-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.close-quick-questions {
+    background: none;
+    border: none;
+    color: #004A8F;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0 8px;
+}
+
+/* Preguntas rápidas */
+.quick-questions {
+    padding: 10px 15px 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+.quick-question {
+    background: rgba(0, 74, 143, 0.1);
+    border: none;
+    color: #004A8F;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    backdrop-filter: blur(2px);
+}
+
+.quick-question:hover {
+    background: #004A8F;
+    color: white;
+}
+
+/* Cuando está oculto */
+.quick-questions-wrapper.hidden {
+    display: none !important; /* Fuerza la ocultación */
+    opacity: 0;
+    transform: translateY(20px);
+    pointer-events: none;
+}
+
+/* Reglas específicas para FAQ */
+#faq-box {
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+}
+
+#faq-box.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    pointer-events: none;
 }

@@ -58,6 +58,19 @@
             <div class="chatbox__messages">
                 <div></div>
             </div>
+            <!-- Nuevo bloque de preguntas frecuentes -->
+            <div class="quick-questions-wrapper" id="faq-box">
+                <div class="quick-questions-header">
+                    <span>¿En qué podemos ayudarte?</span>
+                    <button class="close-quick-questions" onclick="chatbox.toggleQuickQuestions()">×</button>
+                </div>
+                <div class="quick-questions">
+                    <button class="quick-question" onclick="chatbox.sendQuickQuestion('¿Cuáles son los requisitos de admisión?')">Admisiones</button>
+                    <button class="quick-question" onclick="chatbox.sendQuickQuestion('¿Qué carreras ofrecen?')">Carreras</button>
+                    <button class="quick-question" onclick="chatbox.sendQuickQuestion('¿Cómo contacto al departamento financiero?')">Financiero</button>
+                    <button class="quick-question" onclick="chatbox.sendQuickQuestion('¿Cuándo inician las clases?')">Calendario</button>
+                </div>
+            </div>
             <div class="chatbox__footer">
                 <input type="text" placeholder="Escribe un mensaje...">
                 <button class="chatbox__send--footer send__button">Enviar</button>

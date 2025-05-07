@@ -26,7 +26,7 @@
       "responses": [
         "¡Buen día! Soy Ana, su asistente virtual de la Universidad Dr. Andrés Bello. ¿En qué puedo ayudarle hoy?",
         "Hola estimado, ¿qué información necesita? Estoy aquí para asistirle con: admisiones, programas académicos, horarios y más.",
-        "¡Buenas tardes! ¿En qué puedo orientarle hoy? Puede consultar sobre: <br>- Admisiones <br>- Programas académicos <br>- Costos <br>- Becas"
+        "¡Buen día! ¿En qué puedo orientarle hoy? Puede consultar sobre: <br>- Admisiones <br>- Programas académicos <br>- Costos <br>- Becas"
       ]
     },
     {
@@ -47,8 +47,31 @@
         "hasta pronto"
       ],
       "responses": [
-        "¡Hasta luego! Para más consultas, visite nuestro <a href='https://www.unab.edu.sv/chalatenango/' target='_blank'>sitio web</a>",
+        "¡Hasta luego! Para más consultas, visite nuestro <a href='https://www.unab.edu.sv/nuevasedechalatenango/' target='_blank'>sitio web</a>",
         "Fue un placer ayudarle. ¡Éxito en sus estudios!",
+        "Recuerde que puede contactarnos en <a href='mailto:contacto@unab.edu.sv'>contacto@unab.edu.sv</a> para más información"
+      ]
+    },
+    {
+      "tag": "seguimiento",
+      "patterns": [
+        "ok",
+        "ohh",
+        "oh",
+        "entiendo",
+        "interesante",
+        "genial", 
+        "wow",
+        "magnifico", 
+        "vale",
+        "super",
+        "espectacular",
+        "brillante",
+        "Ok"
+      ],
+      "responses": [
+        "¡Nos alegra tenerte aquí! Para más consultas, visite nuestro <a href='https://www.unab.edu.sv/nuevasedechalatenango/' target='_blank'>sitio web</a>",
+        "¿En que más puedo ayudarle?",
         "Recuerde que puede contactarnos en <a href='mailto:contacto@unab.edu.sv'>contacto@unab.edu.sv</a> para más información"
       ]
     },
@@ -63,13 +86,22 @@
         "¿Cómo me inscribo?",
         "Documentación necesaria para admisión",
         "Proceso de ingreso",
+        "Pasos para admisión",
         "¿Qué papeles debo llevar?",
+        "¿Qué trámites debo hacer?",
+        "¿Qué necesito para entrar?",
+        "Documentos para matricularme",
+        "Requisitos de ingreso",
+        "¿Cómo me inscribo?",
+        "¿Qué papeles debo llevar?",
+        "Proceso para ser estudiante",
         "¿Necesito certificado de notas?",
         "consultar sobre admisiones"
       ],
       "responses": [
-        "Para el proceso de admisión necesitará: <br>1. Certificado original de bachillerato (autenticado)<br>2. Partida de nacimiento actualizada<br>3. Copia y original de prueba AVANZO/PAES<br>4. DUI en buen estado<br>5. 2 fotografías tamaño carnet<br>Más detalles en <a href='https://www.unab.edu.sv/chalatenango/admisiones' target='_blank'>nuestra sección de admisiones</a>",
-        "¿Está interesado en alguna carrera específica? Le podemos enviar los requisitos detallados por correo. Visite <a href='https://www.unab.edu.sv/chalatenango/admisiones' target='_blank'>este enlace</a> para iniciar su proceso"
+        "Para el proceso de admisión necesitará: <br>1. Certificado original de bachillerato (autenticado)<br>2. Partida de nacimiento actualizada<br>3. Copia y original de prueba AVANZO/PAES<br>4. DUI en buen estado<br>5. 2 fotografías tamaño carnet<br>Más detalles en <a href='https://www.unab.edu.sv/nuevo-ingreso-2/' target='_blank'>nuestra sección de admisiones</a>",
+        "¿Está interesado en alguna carrera específica? Le podemos enviar los requisitos detallados por correo. Visite <a href='https://www.unab.edu.sv/beneficios-de-estudiar-en-la-unab-2/' target='_blank'>este enlace</a> para iniciar su proceso",
+        "Los requisitos son: <br>1. Certificado de bachillerato <br>2. DUI <br>3. Resultados PAES <br>Más info: [Enlace]"
       ]
     },
 
@@ -95,11 +127,11 @@
         "programas de computación"
       ],
       "responses": [
-        "Nuestras carreras incluyen: <br><strong>Facultad de Ingeniería:</strong> <br>- Ingeniería en Sistemas Computacionales <br>- Ingeniería Civil <br>- Ingeniería Industrial <br><strong>Facultad de Ciencias Jurídicas:</strong> <br>- Licenciatura en Derecho <br><strong>Facultad de Salud:</strong> <br>- Licenciatura en Enfermería <br>Consulte el <a href='https://www.unab.edu.sv/chalatenango/carreras' target='_blank'>listado completo aquí</a>",
-        "¿Le interesa alguna área específica? Tenemos programas en: <br>🔧 Ingenierías <br>⚖️ Ciencias Jurídicas <br>🏥 Salud <br>💼 Administración <br>Ver detalles en <a href='https://www.unab.edu.sv/chalatenango/carreras' target='_blank'>nuestro portal académico</a>",
-        "La carrera de %carrera% está disponible. Más detalles: <a href='...'>enlace</a>",
-        "Contamos con estas carreras: <br>- Ingeniería en Sistemas <br>- Licenciatura en Derecho <br>- Enfermería <br>Ver detalles en <a href='https://www.unab.edu.sv/carreras' target='_blank'>nuestra oferta académica</a>",
-        "Nuestros programas incluyen: <br>🔧 Ingenierías <br>⚖️ Ciencias Jurídicas <br>🏥 Salud <br>💼 Administración <br><a href='https://www.unab.edu.sv/carreras' target='_blank'>Explora aquí</a>"
+        "Nuestras carreras incluyen: <br><strong>Facultad de Ingeniería:</strong> <br>- Ingeniería en Sistemas Computacionales <br>- Ingeniería Civil <br>- Ingeniería Industrial <br><strong>Facultad de Ciencias Jurídicas:</strong> <br>- Licenciatura en Derecho <br><strong>Facultad de Salud:</strong> <br>- Licenciatura en Enfermería <br>Consulte el <a href='https://portal.unab.edu.sv/assets/js/pdfjs/web/viewer.html?file=/assets/cats/03-Catalogo.pdf' target='_blank'>listado completo aquí</a>",
+        "¿Le interesa alguna área específica? Tenemos programas en: <br>🔧 Ingenierías <br>⚖️ Ciencias Jurídicas <br>🏥 Salud <br>💼 Administración <br>Ver detalles en <a href='https://portal.unab.edu.sv/assets/js/pdfjs/web/viewer.html?file=/assets/cats/03-Catalogo.pdf' target='_blank'>nuestro portal académico</a>",
+        "La carrera de %carrera% está disponible. Más detalles: <a href='https://portal.unab.edu.sv/assets/js/pdfjs/web/viewer.html?file=/assets/cats/03-Catalogo.pdf'>enlace</a>",
+        "Contamos con estas carreras: <br>- Ingeniería en Sistemas <br>- Licenciatura en Derecho <br>- Enfermería <br>Ver detalles en <a href='https://portal.unab.edu.sv/assets/js/pdfjs/web/viewer.html?file=/assets/cats/03-Catalogo.pdf' target='_blank'>nuestra oferta académica</a>",
+        "Nuestros programas incluyen: <br>🔧 Ingenierías <br>⚖️ Ciencias Jurídicas <br>🏥 Salud <br>💼 Administración <br><a href='https://portal.unab.edu.sv/assets/js/pdfjs/web/viewer.html?file=/assets/cats/03-Catalogo.pdf' target='_blank'>Explora aquí</a>"
       ]
     },
     {
@@ -136,11 +168,11 @@
         "metodos de pago"
       ],
       "responses": [
-        "Los costos varían según la carrera. Para información detallada: <a href='https://www.unab.edu.sv/chalatenango/financiamiento' target='_blank'>visite nuestro portal</a> o contacte al departamento financiero al <a href='tel:+50322456789'>+503 2245-6789</a>",
-        "Ofrecemos diferentes opciones: <br>💳 Pago completo con 5% de descuento <br>📅 Planes mensuales <br>🎓 Becas académicas <br>Consulte más en <a href='https://www.unab.edu.sv/chalatenango/financiamiento' target='_blank'>nuestra sección de costos</a>",
+        "Los costos varían según la carrera. Para información detallada: <a href='https://www.unab.edu.sv/aranceles-2/' target='_blank'>visite nuestro portal</a> o contacte al departamento financiero al <a href='tel:+50322456789'>+503 2245-6789</a>",
+        "Ofrecemos diferentes opciones: <br>💳 Pago completo con 5% de descuento <br>📅 Planes mensuales <br>🎓 Becas académicas <br>Consulte más en <a href='https://www.unab.edu.sv/aranceles-2/' target='_blank'>nuestra sección de costos</a>",
         "¿Qué carrera le interesa? Podemos enviarle una cotización detallada por correo.",
-        "Los costos para %carrera% son: <br>Matrícula: $X <br>Mensualidad: $Y <br>Ver detalles en <a href='https://www.unab.edu.sv/chalatenango/financiamiento'>enlace</a>",
-        "Ofrecemos múltiples opciones de pago: <br>💳 Tarjeta de crédito <br>🏦 Transferencia bancaria <br>📅 Planes financieros <br>Más detalles <a href='...'>aquí</a>"
+        "Los costos para %carrera% son: <br>Matrícula: $X <br>Mensualidad: $Y <br>Ver detalles en <a href='https://www.unab.edu.sv/aranceles-2/'>enlace</a>",
+        "Ofrecemos múltiples opciones de pago: <br>💳 Tarjeta de crédito <br>🏦 Transferencia bancaria <br>📅 Planes financieros <br>Más detalles <a href='https://www.unab.edu.sv/aranceles-2/'>aquí</a>"
       ],
       "context": ["costos"]
     },
@@ -163,7 +195,7 @@
       ],
       "responses": [
         "<strong>Dirección:</strong> Chalatenango, El Salvador <br><strong>Teléfono:</strong> <a href='tel:+50312345678'>+503 1234-5678</a> <br><strong>Correo:</strong> <a href='mailto:contacto@unab.edu.sv'>contacto@unab.edu.sv</a> <br><strong>Sitio web:</strong> <a href='https://www.unab.edu.sv/chalatenango/' target='_blank'>www.unab.edu.sv</a>",
-        "Síganos en redes sociales: <br>📘 Facebook: <a href='https://fb.com/UNABChalatenango' target='_blank'>/UNABChalatenango</a> <br>📸 Instagram: <a href='https://instagram.com/UNAB_Chalate' target='_blank'>@UNAB_Chalate</a>",
+        "Síganos en redes sociales: <br>📘 Facebook: <a href='https://www.facebook.com/UNABCH' target='_blank'>/UNABChalatenango</a> <br>📸 Instagram: <a href='https://instagram.com/UNAB_Chalate' target='_blank'>@UNAB_Chalate</a>",
         "<strong>Teléfono:</strong> <a href='tel:+50312345678'>+503 1234-5678</a> <br><strong>WhatsApp:</strong> <a href='https://wa.me/50387654321'>+503 8765-4321</a>"
       ]
     },
@@ -180,8 +212,8 @@
         "Retiro de curso"
       ],
       "responses": [
-        "Para trámites administrativos: <br><a href='https://www.unab.edu.sv/chalatenango/tramites' target='_blank'>Visite nuestro portal</a> <br>o diríjase a secretaría académica en horario de 7:00 AM a 5:00 PM",
-        "¿Necesita ayuda con algún trámite específico? Descargue los formatos requeridos en <a href='https://www.unab.edu.sv/chalatenango/tramites' target='_blank'>esta sección</a>"
+        "Para trámites administrativos: <br><a href='https://www.unab.edu.sv/horario-de-atencion-3/' target='_blank'>Visite nuestro portal</a> <br>o diríjase a secretaría académica en horario de 7:00 AM a 5:00 PM",
+        "¿Necesita ayuda con algún trámite específico? Descargue los formatos requeridos en <a href='https://www.unab.edu.sv/horario-de-atencion-3/' target='_blank'>esta sección</a>"
       ]
     },
     {
@@ -203,8 +235,8 @@
         "Becas deportivas"
       ],
       "responses": [
-        "Contamos con programas de becas: <br>🏅 Académicas (promedio mínimo 8.5) <br>⚽ Deportivas <br>🤝 Socioeconómicas <br>Postúlese en <a href='https://www.unab.edu.sv/chalatenango/becas' target='_blank'>nuestro portal de becas</a>",
-        "¿Es estudiante de primer ingreso? Podría aplicar a nuestra beca del 25%. Consulte requisitos en <a href='https://www.unab.edu.sv/chalatenango/becas' target='_blank'>este enlace</a>"
+        "Contamos con programas de becas: <br>🏅 Académicas (promedio mínimo 8.5) <br>⚽ Deportivas <br>🤝 Socioeconómicas <br>Postúlese en <a href='https://www.unab.edu.sv/books/reglamento-general-de-becas/' target='_blank'>nuestro portal de becas</a>",
+        "¿Es estudiante de primer ingreso? Podría aplicar a nuestra beca del 25%. Consulte requisitos en <a href='https://www.unab.edu.sv/books/reglamento-general-de-becas/' target='_blank'>este enlace</a>"
       ]
     },
     {
@@ -219,8 +251,9 @@
         "Fecha de inicio de ciclo"
       ],
       "responses": [
-        "Calendario académico 2024 disponible en: <br><a href='https://www.unab.edu.sv/chalatenango/calendario' target='_blank'>www.unab.edu.sv/chalatenango/calendario</a>",
-        "Próximo inicio de clases: 15 de enero 2024. Descargue el horario completo <a href='https://www.unab.edu.sv/chalatenango/calendario' target='_blank'>aquí</a>"
+        "La carrera de %carrera% está disponible. Más detalles: <a href='https://portal.unab.edu.sv/assets/js/pdfjs/web/viewer.html?file=/assets/cats/03-Catalogo.pdf'>enlace</a>",
+        "Calendario académico 2024 disponible en: <br><a href='https://www.unab.edu.sv/eventosunab/mes/' target='_blank'>Haz click aqui</a>",
+        "Próximo inicio de clases: 15 de enero 2024. Descargue el horario completo <a href='https://www.unab.edu.sv/eventosunab/mes/' target='_blank'>aquí</a>"
       ]
     },
     {
@@ -236,7 +269,7 @@
       ],
       "responses": [
         "Nuestras instalaciones incluyen: <br>🔬 Laboratorios equipados <br>📚 Biblioteca (7 AM a 8 PM) <br>⚽ Canchas deportivas <br>☕ Cafetería estudiantil <br>💻 Sala de computación",
-        "Conozca nuestro campus virtualmente: <a href='https://www.unab.edu.sv/chalatenango/tour' target='_blank'>Tour Virtual 360°</a>"
+        "Conozca nuestro campus virtualmente: <a href='https://www.unab.edu.sv/eventosunab/mes/' target='_blank'>Tour Virtual 360°</a>"
       ]
     },
     {
@@ -249,8 +282,8 @@
         "Próximas evaluaciones"
       ],
       "responses": [
-        "Fechas de evaluaciones disponibles en: <br><a href='https://www.unab.edu.sv/chalatenango/calendario' target='_blank'>portal de su facultad</a>",
-        "Periodo de parciales: 15-20 de mayo 2024. Consulte su horario específico en <a href='https://www.unab.edu.sv/chalatenango/mi-cuenta' target='_blank'>Mi Cuenta UNAB</a>"
+        "Fechas de evaluaciones disponibles en: <br><a href='https://www.unab.edu.sv/eventosunab/mes/' target='_blank'>portal de su facultad</a>",
+        "Periodo de parciales: 15-20 de mayo 2024. Consulte su horario específico en <a href='https://www.unab.edu.sv/eventosunab/mes/' target='_blank'>Mi Cuenta UNAB</a>"
       ]
     },
     {
@@ -265,8 +298,8 @@
         "donde veo mi pensum"
       ],
       "responses": [
-        "El pensum de cada carrera está disponible en: <a href='https://www.unab.edu.sv/pensum' target='_blank'>Descargar pensum</a>",
-        "Consulte el plan de estudios de su carrera en: <a href='https://www.unab.edu.sv/malla-curricular' target='_blank'>Ver malla curricular</a>"
+        "El pensum de cada carrera está disponible en: <a href='https://portal.unab.edu.sv/assets/cats/02-Catalogo.pdf' target='_blank'>Descargar pensum</a>",
+        "Consulte el plan de estudios de su carrera en: <a href='https://portal.unab.edu.sv/assets/cats/02-Catalogo.pdf' target='_blank'>Ver malla curricular</a>"
       ]
     },
     {
@@ -281,7 +314,7 @@
       ],
       "responses": [
         "Contacte al departamento de TI: <br><a href='mailto:soporte@unab.edu.sv'>soporte@unab.edu.sv</a> <br><a href='tel:+50387654321'>+503 8765-4321</a> (Horario: 7 AM - 5 PM)",
-        "¿Necesita restablecer su contraseña? Use <a href='https://www.unab.edu.sv/chalatenango/recuperar-contrasena' target='_blank'>esta herramienta</a>"
+        "¿Necesita restablecer su contraseña? Use <a href='https://www.unab.edu.sv/horario-de-atencion-3/' target='_blank'>esta herramienta</a>"
       ]
     }
   ]

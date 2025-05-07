@@ -6,11 +6,17 @@ class Chatbox {
             sendButton: document.querySelector('.send__button'),
             closeTooltip: document.querySelector('.close-tooltip'),
             tooltip: document.querySelector('.chatbox__tooltip'),
-            tooltipClosed: false
+            tooltipClosed: false,
+            faqBox: document.getElementById('faq-box'), // Nuevo reference
+            // Nuevas referencias agregadas
+            questionsWrapper: document.querySelector('.quick-questions-wrapper'),
+            messagesContainer: document.querySelector('.chatbox__messages')
         }
 
         this.state = false;
         this.messages = [];
+        this.questionsVisible = true; // Nuevo estado para preguntas
+        this.faqVisible = true; // Nuevo estado independiente
     }
 
     display() {
@@ -33,10 +39,21 @@ class Chatbox {
             this.args.tooltipClosed = true;
         });
 
+        // Inicializar preguntas
+        this.initQuestions();
+
         // Mostrar tooltip al cargar
         setTimeout(() => {
             tooltip.classList.remove('hidden');
         }, 1000);
+    }
+
+    // Nuevo método para preguntas frecuentes
+    initQuestions() {
+        // Event listener específico para FAQ
+        this.args.faqBox.querySelector('.close-quick-questions').addEventListener('click', () => {
+            this.toggleFAQ();
+        });
     }
 
     toggleState(chatbox) {
@@ -54,37 +71,40 @@ class Chatbox {
         }
     }
 
-    onSendButton(chatbox) {
-        var textField = chatbox.querySelector('input');
-        let text1 = textField.value
-        if (text1 === "") {
-            return;
-        }
+    // Nuevo método para toggle de preguntas
+    toggleFAQ() {
+        this.faqVisible = !this.faqVisible;
+        this.args.faqBox.classList.toggle('hidden', !this.faqVisible);
+    }
 
-        let msg1 = { name: "User", message: text1 }
-        this.messages.push(msg1);
-
-        // 'http://127.0.0.1:5000/predict'
+    onSendButton(chatbox, text = null) {
+        const textField = chatbox.querySelector('input');
+        const text1 = text || textField.value;
+        
+        if (text1.trim() === "") return;
+    
+        // ✅ Agrega el mensaje del usuario UNA sola vez
+        const userMsg = { name: "User", message: text1 };
+        this.messages.push(userMsg);
+        this.updateChatText(chatbox); // Actualiza la UI aquí
+    
         fetch(`${$SCRIPT_ROOT}/predict`, {
             method: 'POST',
             body: JSON.stringify({ message: text1 }),
-            mode: 'cors',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-          })
-          .then(r => r.json())
-          .then(r => {
-            let msg2 = { name: "Sam", message: r.answer };
-            this.messages.push(msg2);
-            this.updateChatText(chatbox)
-            textField.value = ''
-
-        }).catch((error) => {
+            headers: { 'Content-Type': 'application/json' },
+        })
+        .then(r => r.json())
+        .then(r => {
+            // ✅ Agrega la respuesta del bot
+            const botMsg = { name: "Sam", message: r.answer };
+            this.messages.push(botMsg);
+            this.updateChatText(chatbox);
+            textField.value = '';
+        })
+        .catch(error => {
             console.error('Error:', error);
-            this.updateChatText(chatbox)
-            textField.value = ''
-          });
+            textField.value = '';
+        });
     }
 
     updateChatText(chatbox) {
@@ -102,8 +122,30 @@ class Chatbox {
 
         const chatmessage = chatbox.querySelector('.chatbox__messages');
         chatmessage.innerHTML = html;
+
+        // Auto-scroll al último mensaje
+        setTimeout(() => {
+            chatmessage.scrollTop = chatmessage.scrollHeight;
+        }, 100);
     }
+
+    // Método modificado para preguntas rápidas
+    sendQuickQuestion(question, chatBox) {
+        this.toggleFAQ();
+
+        // Crear mensaje manualmente
+        //let msg = { name: "User", message: question };
+        //this.messages.push(msg);
+        
+        // Simular envío
+        this.onSendButton(this.args.chatBox, question);
+        
+        //this.updateChatText(this.args.chatBox);
+        //this.sendMessage(question, this.args.chatBox);
+    }
+
 }
+
 
 
 const chatbox = new Chatbox();

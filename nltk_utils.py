@@ -49,11 +49,30 @@ def bag_of_words(tokenized_sentence, words):
     bog   = [  0 ,    1 ,    0 ,   1 ,    0 ,    0 ,      0]
     """
     # stem each word
+    # Mejorar coincidencia con tolerancia a errores
     sentence_words = [stem(word) for word in tokenized_sentence]
     # initialize bag with 0 for each word
     bag = np.zeros(len(words), dtype=np.float32)
-    for idx, w in enumerate(words):
-        if w in sentence_words: 
-            bag[idx] = 1
 
+    # for idx, w in enumerate(words):
+    #     if w in sentence_words: 
+    #         bag[idx] = 1
+
+    # return bag
+    for idx, w in enumerate(words):
+        # Coincidencia parcial y por sinónimos
+        if w in sentence_words or any(syn in w for syn in generate_synonyms(sentence_words)):
+            bag[idx] = 1.0
+            
     return bag
+
+def generate_synonyms(tokens):
+    # Ejemplo: Mapeo de sinónimos comunes
+    synonym_map = {
+        "requisito": ["documento", "papel", "formalidad"],
+        "matricula": ["inscripción", "registro", "ingreso"]
+    }
+    synonyms = []
+    for token in tokens:
+        synonyms.extend(synonym_map.get(token, []))
+    return synonyms
