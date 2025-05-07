@@ -9,6 +9,10 @@ Cambios y mejoras en UNABot.
 
 ![V.3.0 del chatbot](images/Demo3.png)
 
+Actualización y mejoras en UNABot.
+
+![V.4.0 del chatbot](images/Demo4.png)
+
 ## Características Principales
 - ✅ Modelo de IA entrenado con datos específicos de la universidad
 - ✅ Interfaz web responsive con soporte para móviles
